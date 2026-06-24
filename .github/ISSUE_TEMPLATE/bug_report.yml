@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible problem with Repo Insight Card.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve this GitHub integration.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Which version, tag, or commit did you use?
+      placeholder: v1.0.0 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: stepsw
+    attributes:
+      label: Steps to reproduce
+      description: Tell us exactly how to reproduce the problem.
+      placeholder: "1. Set GITHUB_USERNAME=...\n2. Run npm run generate\n3. See error..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste relevant JSON logs. Remove tokens or private data.
+      render: shell

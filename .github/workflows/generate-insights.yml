@@ -1,0 +1,43 @@
+name: Generate GitHub Insights
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Generate profile card and analytics
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run tests
+        run: npm test
+
+      - name: Generate GitHub insight artifacts
+        run: npm run generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          LOG_LEVEL: info
+
+      - name: Commit generated artifacts
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update generated GitHub insights"
+          file_pattern: "README.md dist/insights.json dist/profile-card.svg"
+

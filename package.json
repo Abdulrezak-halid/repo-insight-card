@@ -1,0 +1,24 @@
+{
+  "name": "repo-insight-card",
+  "version": "1.0.0",
+  "description": "A small GitHub REST API integration that generates profile and repository insight cards.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "generate": "node src/index.js",
+    "test": "node --test",
+    "lint": "node --check src/*.js test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "github-api",
+    "github-actions",
+    "developer-tools",
+    "profile-card",
+    "repository-analytics"
+  ]
+}
