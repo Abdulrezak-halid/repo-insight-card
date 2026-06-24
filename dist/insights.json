@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T08:13:35.910Z",
+  "generatedAt": "2026-06-24T08:21:36.915Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -41,6 +41,15 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "repo-insight-card",
+      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-24T08:21:30Z"
+    },
+    {
       "name": "Abdulrezak-halid",
       "url": "https://github.com/Abdulrezak-halid/Abdulrezak-halid",
       "description": null,
@@ -48,15 +57,6 @@
       "stars": 1,
       "forks": 0,
       "updatedAt": "2026-06-24T08:10:02Z"
-    },
-    {
-      "name": "repo-insight-card",
-      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-06-24T07:55:44Z"
     },
     {
       "name": "kovex",
