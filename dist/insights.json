@@ -1,24 +1,36 @@
 {
-  "generatedAt": "2026-06-24T07:48:08.870Z",
+  "generatedAt": "2026-06-24T07:55:39.652Z",
   "profile": {
-    "login": "octocat",
-    "name": "The Octocat",
-    "url": "https://github.com/octocat",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/583231?v=4",
-    "publicRepos": 8,
-    "followers": 23069,
-    "following": 9
+    "login": "Abdulrezak-halid",
+    "name": "Abdulrezak Halit",
+    "url": "https://github.com/Abdulrezak-halid",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
+    "publicRepos": 27,
+    "followers": 9,
+    "following": 15
   },
   "totals": {
-    "repositories": 8,
-    "sourceRepositories": 6,
-    "stars": 21602,
-    "forks": 165061,
-    "openIssues": 27399
+    "repositories": 27,
+    "sourceRepositories": 26,
+    "stars": 3,
+    "forks": 1,
+    "openIssues": 42
   },
   "topLanguages": [
     {
-      "name": "CSS",
+      "name": "Python",
+      "count": 12
+    },
+    {
+      "name": "TypeScript",
+      "count": 6
+    },
+    {
+      "name": "JavaScript",
+      "count": 4
+    },
+    {
+      "name": "C++",
       "count": 1
     },
     {
@@ -29,49 +41,49 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "Hello-World",
-      "url": "https://github.com/octocat/Hello-World",
-      "description": "My first repository on GitHub!",
-      "language": null,
-      "stars": 3653,
-      "forks": 5977,
-      "updatedAt": "2026-06-24T07:45:17Z"
-    },
-    {
-      "name": "Spoon-Knife",
-      "url": "https://github.com/octocat/Spoon-Knife",
-      "description": "This repo is for demonstration purposes only.",
-      "language": "HTML",
-      "stars": 13856,
-      "forks": 157734,
-      "updatedAt": "2026-06-23T23:57:01Z"
-    },
-    {
-      "name": "git-consortium",
-      "url": "https://github.com/octocat/git-consortium",
-      "description": "This repo is for demonstration purposes only.",
-      "language": null,
-      "stars": 580,
-      "forks": 170,
-      "updatedAt": "2026-06-23T10:21:06Z"
-    },
-    {
-      "name": "hello-worId",
-      "url": "https://github.com/octocat/hello-worId",
-      "description": "My first repository on GitHub.",
-      "language": null,
-      "stars": 760,
-      "forks": 287,
-      "updatedAt": "2026-06-21T16:27:10Z"
-    },
-    {
-      "name": "octocat.github.io",
-      "url": "https://github.com/octocat/octocat.github.io",
+      "name": "repo-insight-card",
+      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
-      "language": "CSS",
-      "stars": 1116,
-      "forks": 552,
-      "updatedAt": "2026-06-19T12:22:24Z"
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-24T07:55:31Z"
+    },
+    {
+      "name": "kovex",
+      "url": "https://github.com/Abdulrezak-halid/kovex",
+      "description": "KOVEX ERP System | for small and medium businesses",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-24T07:19:53Z"
+    },
+    {
+      "name": "data-mining",
+      "url": "https://github.com/Abdulrezak-halid/data-mining",
+      "description": "Data Mining Project",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-22T14:45:06Z"
+    },
+    {
+      "name": "to-do-list-app",
+      "url": "https://github.com/Abdulrezak-halid/to-do-list-app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-18T13:22:03Z"
+    },
+    {
+      "name": "quick-space",
+      "url": "https://github.com/Abdulrezak-halid/quick-space",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-16T20:56:45Z"
     }
   ]
 }
