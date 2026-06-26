@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T09:53:46.671Z",
+  "generatedAt": "2026-06-26T13:57:24.515Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -7,7 +7,9 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 27,
     "followers": 9,
-    "following": 18
+    "following": 18,
+    "email": "abdulrezak.khaled@gmail.com",
+    "joinedAt": "2023-05-14T15:43:43Z"
   },
   "totals": {
     "repositories": 27,
@@ -38,6 +40,114 @@
       "count": 1
     }
   ],
+  "charts": {
+    "repositoryActivity": [
+      {
+        "key": "2025-07",
+        "label": "25/07",
+        "count": 0
+      },
+      {
+        "key": "2025-08",
+        "label": "25/08",
+        "count": 0
+      },
+      {
+        "key": "2025-09",
+        "label": "25/09",
+        "count": 0
+      },
+      {
+        "key": "2025-10",
+        "label": "25/10",
+        "count": 0
+      },
+      {
+        "key": "2025-11",
+        "label": "25/11",
+        "count": 0
+      },
+      {
+        "key": "2025-12",
+        "label": "25/12",
+        "count": 0
+      },
+      {
+        "key": "2026-01",
+        "label": "26/01",
+        "count": 0
+      },
+      {
+        "key": "2026-02",
+        "label": "26/02",
+        "count": 3
+      },
+      {
+        "key": "2026-03",
+        "label": "26/03",
+        "count": 3
+      },
+      {
+        "key": "2026-04",
+        "label": "26/04",
+        "count": 4
+      },
+      {
+        "key": "2026-05",
+        "label": "26/05",
+        "count": 7
+      },
+      {
+        "key": "2026-06",
+        "label": "26/06",
+        "count": 9
+      }
+    ],
+    "languagesByRepo": [
+      {
+        "name": "Python",
+        "count": 12
+      },
+      {
+        "name": "TypeScript",
+        "count": 6
+      },
+      {
+        "name": "JavaScript",
+        "count": 4
+      },
+      {
+        "name": "C++",
+        "count": 1
+      },
+      {
+        "name": "HTML",
+        "count": 1
+      }
+    ],
+    "languagesByCommit": [
+      {
+        "name": "Python",
+        "count": 12
+      },
+      {
+        "name": "TypeScript",
+        "count": 6
+      },
+      {
+        "name": "JavaScript",
+        "count": 4
+      },
+      {
+        "name": "C++",
+        "count": 1
+      },
+      {
+        "name": "HTML",
+        "count": 1
+      }
+    ]
+  },
   "topTopics": [],
   "recentRepos": [
     {
@@ -47,7 +157,7 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-06-25T09:46:49Z"
+      "updatedAt": "2026-06-26T09:53:52Z"
     },
     {
       "name": "Abdulrezak-halid",
