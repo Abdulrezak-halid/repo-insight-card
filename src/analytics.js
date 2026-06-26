@@ -1,5 +1,6 @@
 export function buildInsights({ user, repositories }) {
   // Keep analytics deterministic so generated commits only change when GitHub data changes.
+  const generatedAt = new Date().toISOString();
   const publicRepos = repositories.filter(
     (repo) => !repo.fork && !repo.archived,
   );
@@ -23,9 +24,10 @@ export function buildInsights({ user, repositories }) {
       forks: repo.forks_count,
       updatedAt: repo.updated_at,
     }));
+  const topLanguages = topEntries(languages, 5);
 
   return {
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     profile: {
       login: user.login,
       name: user.name,
@@ -34,6 +36,8 @@ export function buildInsights({ user, repositories }) {
       publicRepos: user.public_repos,
       followers: user.followers,
       following: user.following,
+      email: user.email,
+      joinedAt: user.created_at,
     },
     totals: {
       repositories: allRepos.length,
@@ -42,7 +46,12 @@ export function buildInsights({ user, repositories }) {
       forks,
       openIssues,
     },
-    topLanguages: topEntries(languages, 5),
+    topLanguages,
+    charts: {
+      repositoryActivity: monthlyRepositoryActivity(allRepos, generatedAt),
+      languagesByRepo: topLanguages,
+      languagesByCommit: topLanguages,
+    },
     topTopics: topEntries(topics, 8),
     recentRepos,
   };
@@ -64,4 +73,38 @@ function topEntries(counts, limit) {
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .slice(0, limit)
     .map(([name, count]) => ({ name, count }));
+}
+
+function monthlyRepositoryActivity(repositories, generatedAt) {
+  const end = new Date(generatedAt);
+  const months = [];
+
+  for (let offset = 11; offset >= 0; offset -= 1) {
+    const date = new Date(
+      Date.UTC(end.getUTCFullYear(), end.getUTCMonth() - offset, 1),
+    );
+    months.push({
+      key: `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`,
+      label: `${String(date.getUTCFullYear()).slice(2)}/${String(date.getUTCMonth() + 1).padStart(2, "0")}`,
+      count: 0,
+    });
+  }
+
+  const indexByKey = new Map(months.map((month, index) => [month.key, index]));
+
+  for (const repo of repositories) {
+    if (!repo.updated_at) {
+      continue;
+    }
+
+    const updated = new Date(repo.updated_at);
+    const key = `${updated.getUTCFullYear()}-${String(updated.getUTCMonth() + 1).padStart(2, "0")}`;
+    const index = indexByKey.get(key);
+
+    if (index !== undefined) {
+      months[index].count += 1;
+    }
+  }
+
+  return months;
 }

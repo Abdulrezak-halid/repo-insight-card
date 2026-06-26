@@ -1,28 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="840" height="360" viewBox="0 0 840 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">GitHub insight card for Abdulrezak Halit</title>
-  <desc id="desc">Generated repository statistics using the GitHub REST API.</desc>
-  <rect width="840" height="360" rx="8" fill="#0D1117"/>
-  <rect x="24" y="24" width="792" height="312" rx="8" fill="#161B22" stroke="#30363D"/>
-  <text x="48" y="70" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="28" font-weight="700">Abdulrezak Halit</text>
-  <text x="48" y="102" fill="#8B949E" font-family="Arial, sans-serif" font-size="15">Generated with Repo Insight Card and the GitHub REST API</text>
+<svg width="920" height="800" viewBox="0 0 920 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub insight report for Abdulrezak Halit</title>
+  <desc id="desc">A stacked repository insight report generated with the GitHub REST API.</desc>
+  <rect width="920" height="800" rx="18" fill="#130F1E"/>
+  <path d="M 0 96 C 165 56, 256 124, 420 88 S 704 34, 920 82 V 0 H 0 Z" fill="#241A34"/>
+  <path d="M 0 800 C 184 750, 296 814, 456 766 S 746 740, 920 774 V 800 Z" fill="#211A2D"/>
+
   <g>
-    <text x="48" y="158" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="30" font-weight="700">27</text>
-    <text x="48" y="186" fill="#8B949E" font-family="Arial, sans-serif" font-size="14">Repositories</text>
+    <text x="36" y="36" fill="#FFB86B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="2">PROFILE</text>
+    <text x="128" y="36" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Identity</text>
+  </g>
+  <text x="36" y="70" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800">Abdulrezak Halit / Abdulrezak-halid</text>
+  <text x="36" y="100" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Generated with Repo Insight Card and the GitHub REST API</text>
+  <text x="704" y="70" fill="#FFB86B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">updated</text>
+  <text x="704" y="95" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">2026-06-26</text>
+  <g>
+    <line x1="36" y1="126" x2="884" y2="126" stroke="#3D344F" stroke-width="1"/>
+    <line x1="36" y1="126" x2="174" y2="126" stroke="#FFB86B" stroke-width="3"/>
+  </g>
+
+  <g>
+    <text x="36" y="158" fill="#FFB86B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="2">SIGNAL</text>
+    <text x="128" y="158" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Core Signals</text>
   </g>
   <g>
-    <text x="220" y="158" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="30" font-weight="700">3</text>
-    <text x="220" y="186" fill="#8B949E" font-family="Arial, sans-serif" font-size="14">Stars</text>
+    <rect x="36" y="178" width="138" height="58" rx="14" fill="#1D182B"/>
+    <rect x="36" y="178" width="5" height="58" rx="2.5" fill="#FFB86B"/>
+    <text x="54" y="202" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Repositories</text>
+    <text x="54" y="228" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">27</text>
   </g>
   <g>
-    <text x="392" y="158" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="30" font-weight="700">1</text>
-    <text x="392" y="186" fill="#8B949E" font-family="Arial, sans-serif" font-size="14">Forks</text>
+    <rect x="212" y="178" width="138" height="58" rx="14" fill="#1D182B"/>
+    <rect x="212" y="178" width="5" height="58" rx="2.5" fill="#7EE7C8"/>
+    <text x="230" y="202" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Stars</text>
+    <text x="230" y="228" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">3</text>
   </g>
   <g>
-    <text x="564" y="158" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="30" font-weight="700">9</text>
-    <text x="564" y="186" fill="#8B949E" font-family="Arial, sans-serif" font-size="14">Followers</text>
+    <rect x="388" y="178" width="138" height="58" rx="14" fill="#1D182B"/>
+    <rect x="388" y="178" width="5" height="58" rx="2.5" fill="#FF6F91"/>
+    <text x="406" y="202" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Forks</text>
+    <text x="406" y="228" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">1</text>
   </g>
-  <text x="48" y="252" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="17" font-weight="700">Top languages</text>
-  <text x="48" y="284" fill="#C9D1D9" font-family="Arial, sans-serif" font-size="16">Python 12  /  TypeScript 6  /  JavaScript 4  /  C++ 1  /  HTML 1</text>
-  <text x="48" y="316" fill="#8B949E" font-family="Arial, sans-serif" font-size="13">Updated 2026-06-26T09:53:46.671Z</text>
+  <g>
+    <rect x="564" y="178" width="138" height="58" rx="14" fill="#1D182B"/>
+    <rect x="564" y="178" width="5" height="58" rx="2.5" fill="#A48CFF"/>
+    <text x="582" y="202" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Followers</text>
+    <text x="582" y="228" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">9</text>
+  </g>
+  <g>
+    <rect x="740" y="178" width="138" height="58" rx="14" fill="#1D182B"/>
+    <rect x="740" y="178" width="5" height="58" rx="2.5" fill="#F7E967"/>
+    <text x="758" y="202" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Open Issues</text>
+    <text x="758" y="228" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">42</text>
+  </g>
+  <g>
+    <line x1="36" y1="268" x2="884" y2="268" stroke="#3D344F" stroke-width="1"/>
+    <line x1="36" y1="268" x2="174" y2="268" stroke="#FFB86B" stroke-width="3"/>
+  </g>
+
+  <g>
+    <text x="36" y="300" fill="#FFB86B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="2">ACTIVITY</text>
+    <text x="128" y="300" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Repository Activity</text>
+  </g>
+  <g>
+    <rect x="218" y="304" width="648" height="112" rx="12" fill="#171322"/>
+    <line x1="236" y1="326" x2="848" y2="326" stroke="#3D344F" stroke-width="1"/><line x1="236" y1="352" x2="848" y2="352" stroke="#3D344F" stroke-width="1"/><line x1="236" y1="378" x2="848" y2="378" stroke="#3D344F" stroke-width="1"/><line x1="236" y1="404" x2="848" y2="404" stroke="#3D344F" stroke-width="1"/>
+    <polygon points="218,416 218.0,416.0 276.9,416.0 335.8,416.0 394.7,416.0 453.6,416.0 512.5,416.0 571.5,416.0 630.4,416.0 689.3,416.0 748.2,416.0 807.1,416.0 866.0,304.0 866,416" fill="#7EE7C8" opacity="0.2"/>
+    <polyline points="218.0,416.0 276.9,416.0 335.8,416.0 394.7,416.0 453.6,416.0 512.5,416.0 571.5,416.0 630.4,416.0 689.3,416.0 748.2,416.0 807.1,416.0 866.0,304.0" fill="none" stroke="#7EE7C8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="218" cy="416" r="3.5" fill="#FFB86B"/><circle cx="276.90909090909093" cy="416" r="3.5" fill="#FFB86B"/><circle cx="335.8181818181818" cy="416" r="3.5" fill="#FFB86B"/><circle cx="394.72727272727275" cy="416" r="3.5" fill="#FFB86B"/><circle cx="453.6363636363636" cy="416" r="3.5" fill="#FFB86B"/><circle cx="512.5454545454545" cy="416" r="3.5" fill="#FFB86B"/><circle cx="571.4545454545455" cy="416" r="3.5" fill="#FFB86B"/><circle cx="630.3636363636364" cy="416" r="3.5" fill="#FFB86B"/><circle cx="689.2727272727273" cy="416" r="3.5" fill="#FFB86B"/><circle cx="748.1818181818182" cy="416" r="3.5" fill="#FFB86B"/><circle cx="807.0909090909091" cy="416" r="3.5" fill="#FFB86B"/><circle cx="866" cy="304" r="3.5" fill="#FFB86B"/>
+    <text x="202" y="436" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">25/07</text><text x="319.8181818181818" y="436" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">25/09</text><text x="437.6363636363636" y="436" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">25/11</text><text x="555.4545454545455" y="436" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">26/01</text><text x="673.2727272727273" y="436" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">26/03</text><text x="791.0909090909091" y="436" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">26/05</text><text x="850" y="436" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">26/06</text>
+  </g>
+  <text x="36" y="342" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800">5</text>
+  <text x="36" y="366" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">repo updates tracked</text>
+  <text x="36" y="390" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">GitHub join date unavailable</text>
+  <text x="36" y="414" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Email private</text>
+  <g>
+    <line x1="36" y1="446" x2="884" y2="446" stroke="#3D344F" stroke-width="1"/>
+    <line x1="36" y1="446" x2="174" y2="446" stroke="#FFB86B" stroke-width="3"/>
+  </g>
+
+  <g>
+    <text x="36" y="478" fill="#FFB86B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="2">LANGUAGE</text>
+    <text x="128" y="478" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Language Shape</text>
+  </g>
+  <g><g>
+        <text x="36" y="506" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Python</text>
+        <text x="168" y="506" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">12</text>
+        <rect x="202" y="494" width="424" height="10" rx="5" fill="#171322"/>
+        <rect x="202" y="494" width="424" height="10" rx="5" fill="#FFB86B"/>
+      </g><g>
+        <text x="36" y="537" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">TypeScript</text>
+        <text x="168" y="537" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">6</text>
+        <rect x="202" y="525" width="424" height="10" rx="5" fill="#171322"/>
+        <rect x="202" y="525" width="212" height="10" rx="5" fill="#7EE7C8"/>
+      </g><g>
+        <text x="36" y="568" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">JavaScript</text>
+        <text x="168" y="568" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">4</text>
+        <rect x="202" y="556" width="424" height="10" rx="5" fill="#171322"/>
+        <rect x="202" y="556" width="141.33333333333331" height="10" rx="5" fill="#FF6F91"/>
+      </g><g>
+        <text x="36" y="599" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">C++</text>
+        <text x="168" y="599" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">1</text>
+        <rect x="202" y="587" width="424" height="10" rx="5" fill="#171322"/>
+        <rect x="202" y="587" width="35.33333333333333" height="10" rx="5" fill="#A48CFF"/>
+      </g><g>
+        <text x="36" y="630" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">HTML</text>
+        <text x="168" y="630" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">1</text>
+        <rect x="202" y="618" width="424" height="10" rx="5" fill="#171322"/>
+        <rect x="202" y="618" width="35.33333333333333" height="10" rx="5" fill="#F7E967"/>
+      </g></g>
+  <g>
+    <circle cx="690" cy="560" r="72" fill="none" stroke="#171322" stroke-width="24"/>
+    <path d="M 762 560 A 72 72 0 0 0 618 560" fill="none" stroke="#FFB86B" stroke-width="24" stroke-linecap="butt"/><path d="M 690 632 A 72 72 0 0 0 762 560" fill="none" stroke="#7EE7C8" stroke-width="24" stroke-linecap="butt"/><path d="M 627.646 596 A 72 72 0 0 0 690 632" fill="none" stroke="#FF6F91" stroke-width="24" stroke-linecap="butt"/><path d="M 620.453 578.635 A 72 72 0 0 0 627.646 596" fill="none" stroke="#A48CFF" stroke-width="24" stroke-linecap="butt"/><path d="M 618 560 A 72 72 0 0 0 620.453 578.635" fill="none" stroke="#F7E967" stroke-width="24" stroke-linecap="butt"/>
+    <circle cx="690" cy="560" r="57" fill="#130F1E"/>
+    <text x="690" y="558" text-anchor="middle" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">24</text>
+    <text x="690" y="580" text-anchor="middle" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">repos</text>
+  </g>
+  <text x="610" y="662" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Top languages by repository count</text>
+  <g>
+    <line x1="36" y1="686" x2="884" y2="686" stroke="#3D344F" stroke-width="1"/>
+    <line x1="36" y1="686" x2="174" y2="686" stroke="#FFB86B" stroke-width="3"/>
+  </g>
+
+  <g>
+    <text x="36" y="718" fill="#FFB86B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="2">RECENT</text>
+    <text x="128" y="718" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Recent Repositories</text>
+  </g>
+  <g><g>
+        <rect x="190" y="734" width="154" height="34" rx="17" fill="#1D182B"/>
+        <circle cx="208" cy="751" r="5" fill="#FFB86B"/>
+        <text x="222" y="756" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">repo-insight-ca...</text>
+      </g><g>
+        <rect x="366" y="734" width="154" height="34" rx="17" fill="#1D182B"/>
+        <circle cx="384" cy="751" r="5" fill="#7EE7C8"/>
+        <text x="398" y="756" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Abdulrezak-halid</text>
+      </g><g>
+        <rect x="542" y="734" width="154" height="34" rx="17" fill="#1D182B"/>
+        <circle cx="560" cy="751" r="5" fill="#FF6F91"/>
+        <text x="574" y="756" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">kovex</text>
+      </g><g>
+        <rect x="718" y="734" width="154" height="34" rx="17" fill="#1D182B"/>
+        <circle cx="736" cy="751" r="5" fill="#A48CFF"/>
+        <text x="750" y="756" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">data-mining</text>
+      </g></g>
 </svg>

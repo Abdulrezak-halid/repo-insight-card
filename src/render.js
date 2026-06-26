@@ -1,5 +1,13 @@
-const CARD_WIDTH = 840;
-const CARD_HEIGHT = 360;
+const CARD_WIDTH = 920;
+const CARD_HEIGHT = 800;
+const FONT_FAMILY = "Inter, Segoe UI, Arial, sans-serif";
+const BACKGROUND = "#130F1E";
+const SURFACE = "#1D182B";
+const SURFACE_ALT = "#171322";
+const TEXT = "#F7F1E8";
+const MUTED = "#B8AB9D";
+const LINE = "#3D344F";
+const ACCENTS = ["#FFB86B", "#7EE7C8", "#FF6F91", "#A48CFF", "#F7E967"];
 
 export function renderMarkdown(insights) {
   const repoRows = insights.recentRepos
@@ -50,36 +58,279 @@ export function renderMarkdown(insights) {
 }
 
 export function renderSvg(insights) {
-  const languageText =
-    insights.topLanguages
-      .map((item) => `${item.name} ${item.count}`)
-      .join("  /  ") || "No language data yet";
   const owner = insights.profile.name || insights.profile.login;
+  const displayName =
+    insights.profile.name && insights.profile.login
+      ? `${insights.profile.name} / ${insights.profile.login}`
+      : owner;
+  const activity =
+    insights.charts?.repositoryActivity ??
+    monthlyRepositoryActivity(insights.recentRepos, insights.generatedAt);
+  const languages = insights.charts?.languagesByRepo ?? insights.topLanguages;
+  const recentRepos = insights.recentRepos.slice(0, 4);
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${CARD_WIDTH}" height="${CARD_HEIGHT}" viewBox="0 0 ${CARD_WIDTH} ${CARD_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">GitHub insight card for ${escapeXml(owner)}</title>
-  <desc id="desc">Generated repository statistics using the GitHub REST API.</desc>
-  <rect width="${CARD_WIDTH}" height="${CARD_HEIGHT}" rx="8" fill="#0D1117"/>
-  <rect x="24" y="24" width="792" height="312" rx="8" fill="#161B22" stroke="#30363D"/>
-  <text x="48" y="70" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="28" font-weight="700">${escapeXml(owner)}</text>
-  <text x="48" y="102" fill="#8B949E" font-family="Arial, sans-serif" font-size="15">Generated with Repo Insight Card and the GitHub REST API</text>
-  ${metric(48, 158, "Repositories", insights.totals.repositories)}
-  ${metric(220, 158, "Stars", insights.totals.stars)}
-  ${metric(392, 158, "Forks", insights.totals.forks)}
-  ${metric(564, 158, "Followers", insights.profile.followers)}
-  <text x="48" y="252" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="17" font-weight="700">Top languages</text>
-  <text x="48" y="284" fill="#C9D1D9" font-family="Arial, sans-serif" font-size="16">${escapeXml(languageText)}</text>
-  <text x="48" y="316" fill="#8B949E" font-family="Arial, sans-serif" font-size="13">Updated ${escapeXml(insights.generatedAt)}</text>
+  <title id="title">GitHub insight report for ${escapeXml(owner)}</title>
+  <desc id="desc">A stacked repository insight report generated with the GitHub REST API.</desc>
+  <rect width="${CARD_WIDTH}" height="${CARD_HEIGHT}" rx="18" fill="${BACKGROUND}"/>
+  <path d="M 0 96 C 165 56, 256 124, 420 88 S 704 34, 920 82 V 0 H 0 Z" fill="#241A34"/>
+  <path d="M 0 800 C 184 750, 296 814, 456 766 S 746 740, 920 774 V 800 Z" fill="#211A2D"/>
+
+  ${sectionHeader(36, "profile", "Identity")}
+  <text x="36" y="70" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="32" font-weight="800">${escapeXml(displayName)}</text>
+  <text x="36" y="100" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="14">Generated with Repo Insight Card and the GitHub REST API</text>
+  <text x="704" y="70" fill="${ACCENTS[0]}" font-family="${FONT_FAMILY}" font-size="14" font-weight="700">updated</text>
+  <text x="704" y="95" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(formatShortDate(insights.generatedAt))}</text>
+  ${divider(126)}
+
+  ${sectionHeader(158, "signal", "Core Signals")}
+  ${metricTile(36, 178, "Repositories", insights.totals.repositories, ACCENTS[0])}
+  ${metricTile(212, 178, "Stars", insights.totals.stars, ACCENTS[1])}
+  ${metricTile(388, 178, "Forks", insights.totals.forks, ACCENTS[2])}
+  ${metricTile(564, 178, "Followers", insights.profile.followers, ACCENTS[3])}
+  ${metricTile(740, 178, "Open Issues", insights.totals.openIssues, ACCENTS[4])}
+  ${divider(268)}
+
+  ${sectionHeader(300, "activity", "Repository Activity")}
+  ${lineChart(218, 304, 648, 112, activity)}
+  <text x="36" y="342" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="42" font-weight="800">${sumActivity(activity)}</text>
+  <text x="36" y="366" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">repo updates tracked</text>
+  <text x="36" y="390" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(formatJoined(insights.profile.joinedAt, insights.generatedAt))}</text>
+  <text x="36" y="414" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(insights.profile.email || "Email private")}</text>
+  ${divider(446)}
+
+  ${sectionHeader(478, "language", "Language Shape")}
+  ${languageBars(36, 506, 424, languages)}
+  ${donutChart(690, 560, 72, 24, languages)}
+  <text x="610" y="662" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">Top languages by repository count</text>
+  ${divider(686)}
+
+  ${sectionHeader(718, "recent", "Recent Repositories")}
+  ${repoStrip(190, 734, recentRepos)}
 </svg>
 `;
 }
 
-function metric(x, y, label, value) {
+function sectionHeader(y, label, title) {
   return `<g>
-    <text x="${x}" y="${y}" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="30" font-weight="700">${value}</text>
-    <text x="${x}" y="${y + 28}" fill="#8B949E" font-family="Arial, sans-serif" font-size="14">${label}</text>
+    <text x="36" y="${y}" fill="${ACCENTS[0]}" font-family="${FONT_FAMILY}" font-size="11" font-weight="800" letter-spacing="2">${escapeXml(label.toUpperCase())}</text>
+    <text x="128" y="${y}" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="17" font-weight="700">${escapeXml(title)}</text>
   </g>`;
+}
+
+function divider(y) {
+  return `<g>
+    <line x1="36" y1="${y}" x2="884" y2="${y}" stroke="${LINE}" stroke-width="1"/>
+    <line x1="36" y1="${y}" x2="174" y2="${y}" stroke="${ACCENTS[0]}" stroke-width="3"/>
+  </g>`;
+}
+
+function metricTile(x, y, label, value, color) {
+  return `<g>
+    <rect x="${x}" y="${y}" width="138" height="58" rx="14" fill="${SURFACE}"/>
+    <rect x="${x}" y="${y}" width="5" height="58" rx="2.5" fill="${color}"/>
+    <text x="${x + 18}" y="${y + 24}" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="12">${escapeXml(label)}</text>
+    <text x="${x + 18}" y="${y + 50}" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="26" font-weight="800">${escapeXml(value)}</text>
+  </g>`;
+}
+
+function lineChart(x, y, width, height, points) {
+  const values = points.length ? points.map((point) => point.count) : [0];
+  const maxValue = Math.max(1, ...values);
+  const plotPoints = points.length
+    ? points.map((point, index) => {
+        const px = x + (index / Math.max(1, points.length - 1)) * width;
+        const py = y + height - (point.count / maxValue) * height;
+        return { ...point, x: px, y: py };
+      })
+    : [{ x, y: y + height, label: "", count: 0 }];
+  const line = plotPoints
+    .map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`)
+    .join(" ");
+  const area = `${x},${y + height} ${line} ${x + width},${y + height}`;
+  const labels = plotPoints.filter(
+    (_, index) => index % 2 === 0 || index === plotPoints.length - 1,
+  );
+
+  return `<g>
+    <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="12" fill="${SURFACE_ALT}"/>
+    ${Array.from({ length: 4 }, (_, index) => {
+      const gy = y + 22 + index * 26;
+      return `<line x1="${x + 18}" y1="${gy}" x2="${x + width - 18}" y2="${gy}" stroke="${LINE}" stroke-width="1"/>`;
+    }).join("")}
+    <polygon points="${area}" fill="${ACCENTS[1]}" opacity="0.2"/>
+    <polyline points="${line}" fill="none" stroke="${ACCENTS[1]}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    ${plotPoints.map((point) => `<circle cx="${point.x}" cy="${point.y}" r="3.5" fill="${ACCENTS[0]}"/>`).join("")}
+    ${labels
+      .map(
+        (point) =>
+          `<text x="${point.x - 16}" y="${y + height + 20}" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="11">${escapeXml(point.label)}</text>`,
+      )
+      .join("")}
+  </g>`;
+}
+
+function languageBars(x, y, width, items) {
+  if (!items.length) {
+    return `<text x="${x}" y="${y}" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="14">No language data yet</text>`;
+  }
+
+  const maxValue = Math.max(...items.map((item) => item.count), 1);
+
+  return `<g>${items
+    .map((item, index) => {
+      const rowY = y + index * 31;
+      const barWidth = Math.max(18, (item.count / maxValue) * width);
+      const color = ACCENTS[index % ACCENTS.length];
+      return `<g>
+        <text x="${x}" y="${rowY}" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="14" font-weight="700">${escapeXml(item.name)}</text>
+        <text x="${x + 132}" y="${rowY}" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(item.count)}</text>
+        <rect x="${x + 166}" y="${rowY - 12}" width="${width}" height="10" rx="5" fill="${SURFACE_ALT}"/>
+        <rect x="${x + 166}" y="${rowY - 12}" width="${barWidth}" height="10" rx="5" fill="${color}"/>
+      </g>`;
+    })
+    .join("")}</g>`;
+}
+
+function donutChart(cx, cy, radius, strokeWidth, items) {
+  const total = items.reduce((sum, item) => sum + item.count, 0);
+
+  if (!total) {
+    return `<circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${LINE}" stroke-width="${strokeWidth}"/>`;
+  }
+
+  let start = -90;
+  const slices = items
+    .map((item, index) => {
+      const angle = (item.count / total) * 360;
+      const slice = arc(cx, cy, radius, start, start + angle);
+      start += angle;
+      return `<path d="${slice}" fill="none" stroke="${ACCENTS[index % ACCENTS.length]}" stroke-width="${strokeWidth}" stroke-linecap="butt"/>`;
+    })
+    .join("");
+
+  return `<g>
+    <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${SURFACE_ALT}" stroke-width="${strokeWidth}"/>
+    ${slices}
+    <circle cx="${cx}" cy="${cy}" r="${radius - strokeWidth / 2 - 3}" fill="${BACKGROUND}"/>
+    <text x="${cx}" y="${cy - 2}" text-anchor="middle" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="28" font-weight="800">${total}</text>
+    <text x="${cx}" y="${cy + 20}" text-anchor="middle" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="11">repos</text>
+  </g>`;
+}
+
+function repoStrip(x, y, repos) {
+  if (!repos.length) {
+    return `<text x="${x}" y="${y + 22}" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="14">No repositories found.</text>`;
+  }
+
+  return `<g>${repos
+    .map((repo, index) => {
+      const rx = x + index * 176;
+      const color = ACCENTS[index % ACCENTS.length];
+      return `<g>
+        <rect x="${rx}" y="${y}" width="154" height="34" rx="17" fill="${SURFACE}"/>
+        <circle cx="${rx + 18}" cy="${y + 17}" r="5" fill="${color}"/>
+        <text x="${rx + 32}" y="${y + 22}" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="12" font-weight="700">${escapeXml(truncate(repo.name, 16))}</text>
+      </g>`;
+    })
+    .join("")}</g>`;
+}
+
+function arc(cx, cy, radius, startAngle, endAngle) {
+  const start = polarToCartesian(cx, cy, radius, endAngle);
+  const end = polarToCartesian(cx, cy, radius, startAngle);
+  const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+
+  return `M ${start.x} ${start.y} A ${radius} ${radius} 0 ${largeArcFlag} 0 ${end.x} ${end.y}`;
+}
+
+function polarToCartesian(cx, cy, radius, angleInDegrees) {
+  const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180;
+
+  return {
+    x: Number((cx + radius * Math.cos(angleInRadians)).toFixed(3)),
+    y: Number((cy + radius * Math.sin(angleInRadians)).toFixed(3)),
+  };
+}
+
+function formatJoined(joinedAt, generatedAt) {
+  if (!joinedAt) {
+    return "GitHub join date unavailable";
+  }
+
+  const joined = new Date(joinedAt);
+  const generated = new Date(generatedAt);
+  const years = Math.max(
+    0,
+    generated.getUTCFullYear() -
+      joined.getUTCFullYear() -
+      (generated.getUTCMonth() < joined.getUTCMonth() ||
+      (generated.getUTCMonth() === joined.getUTCMonth() &&
+        generated.getUTCDate() < joined.getUTCDate())
+        ? 1
+        : 0),
+  );
+
+  if (years === 0) {
+    return "Joined GitHub less than a year ago";
+  }
+
+  return `Joined GitHub ${years} ${years === 1 ? "year" : "years"} ago`;
+}
+
+function formatShortDate(value) {
+  return new Date(value).toISOString().slice(0, 10);
+}
+
+function sumActivity(activity) {
+  return activity.reduce((sum, item) => sum + item.count, 0);
+}
+
+function monthlyRepositoryActivity(repositories, generatedAt) {
+  const end = new Date(generatedAt);
+  const months = [];
+
+  for (let offset = 11; offset >= 0; offset -= 1) {
+    const date = new Date(
+      Date.UTC(end.getUTCFullYear(), end.getUTCMonth() - offset, 1),
+    );
+    months.push({
+      key: `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`,
+      label: `${String(date.getUTCFullYear()).slice(2)}/${String(date.getUTCMonth() + 1).padStart(2, "0")}`,
+      count: 0,
+    });
+  }
+
+  const indexByKey = new Map(months.map((month, index) => [month.key, index]));
+
+  for (const repo of repositories ?? []) {
+    const updatedAt = repo.updatedAt ?? repo.updated_at;
+
+    if (!updatedAt) {
+      continue;
+    }
+
+    const updated = new Date(updatedAt);
+    const key = `${updated.getUTCFullYear()}-${String(updated.getUTCMonth() + 1).padStart(2, "0")}`;
+    const index = indexByKey.get(key);
+
+    if (index !== undefined) {
+      months[index].count += 1;
+    }
+  }
+
+  return months;
+}
+
+function truncate(value, maxLength) {
+  const text = String(value);
+
+  if (text.length <= maxLength) {
+    return text;
+  }
+
+  return `${text.slice(0, maxLength - 1)}...`;
 }
 
 function escapeMarkdown(value) {
