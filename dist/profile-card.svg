@@ -13,7 +13,7 @@
   <text x="36" y="70" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800">Abdulrezak Halit / Abdulrezak-halid</text>
   <text x="36" y="100" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Generated with Repo Insight Card and the GitHub REST API</text>
   <text x="704" y="70" fill="#FFB86B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">updated</text>
-  <text x="704" y="95" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">2026-06-27</text>
+  <text x="704" y="95" fill="#B8AB9D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">2026-06-28</text>
   <g>
     <line x1="36" y1="126" x2="884" y2="126" stroke="#3D344F" stroke-width="1"/>
     <line x1="36" y1="126" x2="174" y2="126" stroke="#FFB86B" stroke-width="3"/>
@@ -129,11 +129,11 @@
   <g><g>
         <rect x="190" y="734" width="154" height="34" rx="17" fill="#1D182B"/>
         <circle cx="208" cy="751" r="5" fill="#FFB86B"/>
-        <text x="222" y="756" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">repo-insight-ca...</text>
+        <text x="222" y="756" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Abdulrezak-halid</text>
       </g><g>
         <rect x="366" y="734" width="154" height="34" rx="17" fill="#1D182B"/>
         <circle cx="384" cy="751" r="5" fill="#7EE7C8"/>
-        <text x="398" y="756" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Abdulrezak-halid</text>
+        <text x="398" y="756" fill="#F7F1E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">repo-insight-ca...</text>
       </g><g>
         <rect x="542" y="734" width="154" height="34" rx="17" fill="#1D182B"/>
         <circle cx="560" cy="751" r="5" fill="#FF6F91"/>
