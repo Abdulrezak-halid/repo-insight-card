@@ -1,5 +1,5 @@
 const CARD_WIDTH = 920;
-const CARD_HEIGHT = 800;
+const CARD_HEIGHT = 1060;
 const FONT_FAMILY = "Inter, Segoe UI, Arial, sans-serif";
 const BACKGROUND = "#130F1E";
 const SURFACE = "#1D182B";
@@ -59,10 +59,7 @@ export function renderMarkdown(insights) {
 
 export function renderSvg(insights) {
   const owner = insights.profile.name || insights.profile.login;
-  const displayName =
-    insights.profile.name && insights.profile.login
-      ? `${insights.profile.name} / ${insights.profile.login}`
-      : owner;
+  const displayName = owner;
   const activity =
     insights.charts?.repositoryActivity ??
     monthlyRepositoryActivity(insights.recentRepos, insights.generatedAt);
@@ -73,43 +70,152 @@ export function renderSvg(insights) {
 <svg width="${CARD_WIDTH}" height="${CARD_HEIGHT}" viewBox="0 0 ${CARD_WIDTH} ${CARD_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">GitHub insight report for ${escapeXml(owner)}</title>
   <desc id="desc">A stacked repository insight report generated with the GitHub REST API.</desc>
+  ${svgAnimationStyles()}
   <rect width="${CARD_WIDTH}" height="${CARD_HEIGHT}" rx="18" fill="${BACKGROUND}"/>
-  <path d="M 0 96 C 165 56, 256 124, 420 88 S 704 34, 920 82 V 0 H 0 Z" fill="#241A34"/>
-  <path d="M 0 800 C 184 750, 296 814, 456 766 S 746 740, 920 774 V 800 Z" fill="#211A2D"/>
+  ${decorativeGesture("top")}
 
-  ${sectionHeader(36, "profile", "Identity")}
-  <text x="36" y="70" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="32" font-weight="800">${escapeXml(displayName)}</text>
-  <text x="36" y="100" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="14">Generated with Repo Insight Card and the GitHub REST API</text>
-  <text x="704" y="70" fill="${ACCENTS[0]}" font-family="${FONT_FAMILY}" font-size="14" font-weight="700">updated</text>
-  <text x="704" y="95" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(formatShortDate(insights.generatedAt))}</text>
-  ${divider(126)}
+  <g class="section section-profile">
+    ${sectionHeader(126, "profile", "Identity")}
+    <text x="36" y="164" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="36" font-weight="800">${escapeXml(displayName)}</text>
+    <text x="36" y="196" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="14">Generated with Repo Insight Card and the GitHub REST API</text>
+    <text x="704" y="154" fill="${ACCENTS[0]}" font-family="${FONT_FAMILY}" font-size="14" font-weight="700">updated</text>
+    <text x="704" y="180" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(formatShortDate(insights.generatedAt))}</text>
+    ${divider(226)}
+  </g>
 
-  ${sectionHeader(158, "signal", "Core Signals")}
-  ${metricTile(36, 178, "Repositories", insights.totals.repositories, ACCENTS[0])}
-  ${metricTile(212, 178, "Stars", insights.totals.stars, ACCENTS[1])}
-  ${metricTile(388, 178, "Forks", insights.totals.forks, ACCENTS[2])}
-  ${metricTile(564, 178, "Followers", insights.profile.followers, ACCENTS[3])}
-  ${metricTile(740, 178, "Open Issues", insights.totals.openIssues, ACCENTS[4])}
-  ${divider(268)}
+  <g class="section section-signal">
+    ${sectionHeader(266, "signal", "Core Signals")}
+    ${metricTile(36, 294, "Repositories", insights.totals.repositories, ACCENTS[0])}
+    ${metricTile(212, 294, "Stars", insights.totals.stars, ACCENTS[1])}
+    ${metricTile(388, 294, "Forks", insights.totals.forks, ACCENTS[2])}
+    ${metricTile(564, 294, "Followers", insights.profile.followers, ACCENTS[3])}
+    ${metricTile(740, 294, "Open Issues", insights.totals.openIssues, ACCENTS[4])}
+    ${divider(386)}
+  </g>
 
-  ${sectionHeader(300, "activity", "Repository Activity")}
-  ${lineChart(218, 304, 648, 112, activity)}
-  <text x="36" y="342" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="42" font-weight="800">${sumActivity(activity)}</text>
-  <text x="36" y="366" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">repo updates tracked</text>
-  <text x="36" y="390" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(formatJoined(insights.profile.joinedAt, insights.generatedAt))}</text>
-  <text x="36" y="414" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(insights.profile.email || "Email private")}</text>
-  ${divider(446)}
+  <g class="section section-activity">
+    ${sectionHeader(426, "activity", "Repository Activity")}
+    ${lineChart(236, 444, 630, 118, activity)}
+    <text x="36" y="478" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="44" font-weight="800">${sumActivity(activity)}</text>
+    <text x="36" y="506" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">repo updates tracked</text>
+    <text x="36" y="532" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(formatJoined(insights.profile.joinedAt, insights.generatedAt))}</text>
+    <text x="36" y="558" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(insights.profile.email || "Email private")}</text>
+    ${divider(600)}
+  </g>
 
-  ${sectionHeader(478, "language", "Language Shape")}
-  ${languageBars(36, 506, 424, languages)}
-  ${donutChart(690, 560, 72, 24, languages)}
-  <text x="610" y="662" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">Top languages by repository count</text>
-  ${divider(686)}
+  <g class="section section-language">
+    ${sectionHeader(640, "language", "Language Shape")}
+    ${languageBars(36, 672, 382, languages)}
+    ${donutChart(766, 718, 70, 22, languages)}
+    <text x="660" y="814" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">Top languages by repository count</text>
+    ${divider(838)}
+  </g>
 
-  ${sectionHeader(718, "recent", "Recent Repositories")}
-  ${repoStrip(190, 734, recentRepos)}
+  <g class="section section-recent">
+    ${sectionHeader(874, "recent", "Recent Repositories")}
+    ${repoStrip(36, 900, recentRepos)}
+    ${divider(972)}
+  </g>
+
+  ${decorativeGesture("bottom")}
 </svg>
 `;
+}
+
+function svgAnimationStyles() {
+  return `<style>
+    .gesture-top {
+      animation: driftTop 8s ease-in-out infinite alternate;
+      transform-origin: 50% 0%;
+    }
+    .gesture-bottom {
+      animation: driftBottom 9s ease-in-out infinite alternate;
+      transform-origin: 50% 100%;
+    }
+    .gesture-glow {
+      animation: breathe 5s ease-in-out infinite alternate;
+    }
+    .section {
+      animation: settle 700ms ease both;
+    }
+    .section-profile { animation-delay: 80ms; }
+    .section-signal { animation-delay: 180ms; }
+    .section-activity { animation-delay: 280ms; }
+    .section-language { animation-delay: 380ms; }
+    .section-recent { animation-delay: 480ms; }
+    .metric-tile {
+      animation: tileLift 4s ease-in-out infinite alternate;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .chart-line {
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: drawLine 1.4s ease 500ms forwards;
+    }
+    .chart-dot {
+      animation: pulseDot 2.6s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .bar-fill {
+      animation: barBreathe 3.2s ease-in-out infinite alternate;
+      transform-box: fill-box;
+      transform-origin: left center;
+    }
+    .donut-slice {
+      animation: ringGlow 3.8s ease-in-out infinite alternate;
+    }
+    @keyframes driftTop {
+      from { transform: translateX(-8px) translateY(0); opacity: 0.86; }
+      to { transform: translateX(8px) translateY(10px); opacity: 1; }
+    }
+    @keyframes driftBottom {
+      from { transform: translateX(8px) translateY(4px); opacity: 0.82; }
+      to { transform: translateX(-10px) translateY(-8px); opacity: 1; }
+    }
+    @keyframes breathe {
+      from { opacity: 0.18; }
+      to { opacity: 0.46; }
+    }
+    @keyframes settle {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes tileLift {
+      from { transform: translateY(0); }
+      to { transform: translateY(-3px); }
+    }
+    @keyframes drawLine {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseDot {
+      0%, 100% { transform: scale(1); opacity: 0.86; }
+      50% { transform: scale(1.45); opacity: 1; }
+    }
+    @keyframes barBreathe {
+      from { opacity: 0.78; }
+      to { opacity: 1; }
+    }
+    @keyframes ringGlow {
+      from { opacity: 0.74; }
+      to { opacity: 1; }
+    }
+  </style>`;
+}
+
+function decorativeGesture(position) {
+  if (position === "top") {
+    return `<g class="gesture-top" aria-hidden="true">
+      <path d="M -18 92 C 130 42, 250 118, 414 82 S 706 26, 944 80 V 0 H -18 Z" fill="#241A34"/>
+      <path class="gesture-glow" d="M 18 82 C 176 40, 284 96, 436 70 S 700 42, 902 62" stroke="${ACCENTS[1]}" stroke-width="3" stroke-linecap="round"/>
+    </g>`;
+  }
+
+  return `<g class="gesture-bottom" aria-hidden="true">
+    <path d="M -20 ${CARD_HEIGHT} C 168 998, 304 1054, 458 1012 S 746 988, 942 1024 V ${CARD_HEIGHT} Z" fill="#211A2D"/>
+    <path class="gesture-glow" d="M 28 1026 C 198 988, 310 1038, 470 1002 S 734 984, 894 1008" stroke="${ACCENTS[2]}" stroke-width="3" stroke-linecap="round"/>
+  </g>`;
 }
 
 function sectionHeader(y, label, title) {
@@ -127,7 +233,7 @@ function divider(y) {
 }
 
 function metricTile(x, y, label, value, color) {
-  return `<g>
+  return `<g class="metric-tile">
     <rect x="${x}" y="${y}" width="138" height="58" rx="14" fill="${SURFACE}"/>
     <rect x="${x}" y="${y}" width="5" height="58" rx="2.5" fill="${color}"/>
     <text x="${x + 18}" y="${y + 24}" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="12">${escapeXml(label)}</text>
@@ -160,8 +266,8 @@ function lineChart(x, y, width, height, points) {
       return `<line x1="${x + 18}" y1="${gy}" x2="${x + width - 18}" y2="${gy}" stroke="${LINE}" stroke-width="1"/>`;
     }).join("")}
     <polygon points="${area}" fill="${ACCENTS[1]}" opacity="0.2"/>
-    <polyline points="${line}" fill="none" stroke="${ACCENTS[1]}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    ${plotPoints.map((point) => `<circle cx="${point.x}" cy="${point.y}" r="3.5" fill="${ACCENTS[0]}"/>`).join("")}
+    <polyline class="chart-line" points="${line}" fill="none" stroke="${ACCENTS[1]}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    ${plotPoints.map((point, index) => `<circle class="chart-dot" style="animation-delay: ${index * 90}ms" cx="${point.x}" cy="${point.y}" r="3.5" fill="${ACCENTS[0]}"/>`).join("")}
     ${labels
       .map(
         (point) =>
@@ -187,7 +293,7 @@ function languageBars(x, y, width, items) {
         <text x="${x}" y="${rowY}" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="14" font-weight="700">${escapeXml(item.name)}</text>
         <text x="${x + 132}" y="${rowY}" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="13">${escapeXml(item.count)}</text>
         <rect x="${x + 166}" y="${rowY - 12}" width="${width}" height="10" rx="5" fill="${SURFACE_ALT}"/>
-        <rect x="${x + 166}" y="${rowY - 12}" width="${barWidth}" height="10" rx="5" fill="${color}"/>
+        <rect class="bar-fill" x="${x + 166}" y="${rowY - 12}" width="${barWidth}" height="10" rx="5" fill="${color}"/>
       </g>`;
     })
     .join("")}</g>`;
@@ -206,7 +312,7 @@ function donutChart(cx, cy, radius, strokeWidth, items) {
       const angle = (item.count / total) * 360;
       const slice = arc(cx, cy, radius, start, start + angle);
       start += angle;
-      return `<path d="${slice}" fill="none" stroke="${ACCENTS[index % ACCENTS.length]}" stroke-width="${strokeWidth}" stroke-linecap="butt"/>`;
+      return `<path class="donut-slice" d="${slice}" fill="none" stroke="${ACCENTS[index % ACCENTS.length]}" stroke-width="${strokeWidth}" stroke-linecap="butt"/>`;
     })
     .join("");
 
@@ -226,12 +332,14 @@ function repoStrip(x, y, repos) {
 
   return `<g>${repos
     .map((repo, index) => {
-      const rx = x + index * 176;
+      const rx = x + index * 216;
       const color = ACCENTS[index % ACCENTS.length];
-      return `<g>
-        <rect x="${rx}" y="${y}" width="154" height="34" rx="17" fill="${SURFACE}"/>
-        <circle cx="${rx + 18}" cy="${y + 17}" r="5" fill="${color}"/>
-        <text x="${rx + 32}" y="${y + 22}" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="12" font-weight="700">${escapeXml(truncate(repo.name, 16))}</text>
+      return `<g class="metric-tile">
+        <rect x="${rx}" y="${y}" width="198" height="48" rx="12" fill="${SURFACE}"/>
+        <rect x="${rx}" y="${y}" width="4" height="48" rx="2" fill="${color}"/>
+        <circle cx="${rx + 22}" cy="${y + 24}" r="5" fill="${color}"/>
+        <text x="${rx + 38}" y="${y + 22}" fill="${TEXT}" font-family="${FONT_FAMILY}" font-size="12" font-weight="800">${escapeXml(truncate(repo.name, 19))}</text>
+        <text x="${rx + 38}" y="${y + 38}" fill="${MUTED}" font-family="${FONT_FAMILY}" font-size="11">${escapeXml(repo.language || "Language n/a")}</text>
       </g>`;
     })
     .join("")}</g>`;
