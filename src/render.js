@@ -1,13 +1,16 @@
 const CARD_WIDTH = 920;
 const CARD_HEIGHT = 1060;
 const FONT_FAMILY = "Inter, Segoe UI, Arial, sans-serif";
-const BACKGROUND = "#130F1E";
-const SURFACE = "#1D182B";
-const SURFACE_ALT = "#171322";
-const TEXT = "#F7F1E8";
-const MUTED = "#B8AB9D";
-const LINE = "#3D344F";
-const ACCENTS = ["#FFB86B", "#7EE7C8", "#FF6F91", "#A48CFF", "#F7E967"];
+// GitHub Primer-inspired dark tokens keep the card tied to a recognizable system.
+const BACKGROUND = "#0D1117";
+const SURFACE = "#161B22";
+const SURFACE_ALT = "#010409";
+const TEXT = "#F0F6FC";
+const MUTED = "#8B949E";
+const LINE = "#30363D";
+const WASH = "#0F1A2B";
+const WASH_ALT = "#111927";
+const ACCENTS = ["#58A6FF", "#3FB950", "#D29922", "#A371F7", "#F85149"];
 
 export function renderMarkdown(insights) {
   const repoRows = insights.recentRepos
@@ -212,13 +215,13 @@ function svgAnimationStyles() {
 function decorativeGesture(position) {
   if (position === "top") {
     return `<g class="gesture-top" aria-hidden="true">
-      <path d="M -18 92 C 130 42, 250 118, 414 82 S 706 26, 944 80 V 0 H -18 Z" fill="#241A34"/>
+      <path d="M -18 92 C 130 42, 250 118, 414 82 S 706 26, 944 80 V 0 H -18 Z" fill="${WASH}"/>
       <path class="gesture-glow" d="M 18 82 C 176 40, 284 96, 436 70 S 700 42, 902 62" stroke="${ACCENTS[1]}" stroke-width="3" stroke-linecap="round"/>
     </g>`;
   }
 
   return `<g class="gesture-bottom" aria-hidden="true">
-    <path d="M -20 ${CARD_HEIGHT} C 168 998, 304 1054, 458 1012 S 746 988, 942 1024 V ${CARD_HEIGHT} Z" fill="#211A2D"/>
+    <path d="M -20 ${CARD_HEIGHT} C 168 998, 304 1054, 458 1012 S 746 988, 942 1024 V ${CARD_HEIGHT} Z" fill="${WASH_ALT}"/>
     <path class="gesture-glow" d="M 28 1026 C 198 988, 310 1038, 470 1002 S 734 984, 894 1008" stroke="${ACCENTS[2]}" stroke-width="3" stroke-linecap="round"/>
   </g>`;
 }
