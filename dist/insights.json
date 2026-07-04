@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-03T09:37:30.657Z",
+  "generatedAt": "2026-07-04T09:02:31.327Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
-    "publicRepos": 25,
+    "publicRepos": 26,
     "followers": 9,
     "following": 18,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
   "totals": {
-    "repositories": 25,
-    "sourceRepositories": 24,
+    "repositories": 26,
+    "sourceRepositories": 25,
     "stars": 3,
     "forks": 1,
     "openIssues": 42
@@ -25,7 +25,7 @@
     },
     {
       "name": "TypeScript",
-      "count": 6
+      "count": 7
     },
     {
       "name": "JavaScript",
@@ -100,7 +100,7 @@
       {
         "key": "2026-07",
         "label": "26/07",
-        "count": 2
+        "count": 3
       }
     ],
     "languagesByRepo": [
@@ -110,7 +110,7 @@
       },
       {
         "name": "TypeScript",
-        "count": 6
+        "count": 7
       },
       {
         "name": "JavaScript",
@@ -132,7 +132,7 @@
       },
       {
         "name": "TypeScript",
-        "count": 6
+        "count": 7
       },
       {
         "name": "JavaScript",
@@ -151,13 +151,13 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "data-mining",
-      "url": "https://github.com/Abdulrezak-halid/data-mining",
-      "description": "Data Mining Project",
-      "language": "Python",
+      "name": "abod-portfolio",
+      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "description": null,
+      "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-02T13:36:21Z"
+      "updatedAt": "2026-07-03T14:09:52Z"
     },
     {
       "name": "repo-insight-card",
@@ -166,7 +166,16 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-02T09:35:58Z"
+      "updatedAt": "2026-07-03T09:37:35Z"
+    },
+    {
+      "name": "data-mining",
+      "url": "https://github.com/Abdulrezak-halid/data-mining",
+      "description": "Data Mining Project",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-07-02T13:36:21Z"
     },
     {
       "name": "Abdulrezak-halid",
@@ -185,15 +194,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-06-24T07:19:53Z"
-    },
-    {
-      "name": "to-do-list-app",
-      "url": "https://github.com/Abdulrezak-halid/to-do-list-app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-06-18T13:22:03Z"
     }
   ]
 }
