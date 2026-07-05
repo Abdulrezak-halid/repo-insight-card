@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T09:02:31.327Z",
+  "generatedAt": "2026-07-05T09:24:07.149Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -80,7 +80,7 @@
       {
         "key": "2026-03",
         "label": "26/03",
-        "count": 3
+        "count": 2
       },
       {
         "key": "2026-04",
@@ -100,7 +100,7 @@
       {
         "key": "2026-07",
         "label": "26/07",
-        "count": 3
+        "count": 4
       }
     ],
     "languagesByRepo": [
@@ -151,13 +151,13 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "abod-portfolio",
-      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
-      "description": null,
+      "name": "money-tracker",
+      "url": "https://github.com/Abdulrezak-halid/money-tracker",
+      "description": "ParaTakip is a modern, responsive personal finance application",
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-03T14:09:52Z"
+      "updatedAt": "2026-07-04T12:49:04Z"
     },
     {
       "name": "repo-insight-card",
@@ -166,7 +166,16 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-03T09:37:35Z"
+      "updatedAt": "2026-07-04T09:02:36Z"
+    },
+    {
+      "name": "abod-portfolio",
+      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-07-03T14:09:52Z"
     },
     {
       "name": "data-mining",
@@ -185,15 +194,6 @@
       "stars": 1,
       "forks": 0,
       "updatedAt": "2026-06-30T08:38:46Z"
-    },
-    {
-      "name": "kovex",
-      "url": "https://github.com/Abdulrezak-halid/kovex",
-      "description": "KOVEX ERP System | for small and medium businesses",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-06-24T07:19:53Z"
     }
   ]
 }
