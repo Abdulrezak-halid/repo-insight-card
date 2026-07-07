@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-06T11:06:54.986Z",
+  "generatedAt": "2026-07-07T10:02:52.064Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 26,
-    "followers": 9,
+    "followers": 10,
     "following": 18,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
@@ -151,13 +151,13 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "money-tracker",
-      "url": "https://github.com/Abdulrezak-halid/money-tracker",
-      "description": "ParaTakip is a modern, responsive personal finance application",
+      "name": "abod-portfolio",
+      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "description": null,
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-05T10:32:23Z"
+      "updatedAt": "2026-07-06T14:35:31Z"
     },
     {
       "name": "repo-insight-card",
@@ -166,16 +166,16 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-05T09:24:11Z"
+      "updatedAt": "2026-07-06T11:07:01Z"
     },
     {
-      "name": "abod-portfolio",
-      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
-      "description": null,
+      "name": "money-tracker",
+      "url": "https://github.com/Abdulrezak-halid/money-tracker",
+      "description": "ParaTakip is a modern, responsive personal finance application",
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-03T14:09:52Z"
+      "updatedAt": "2026-07-05T10:32:23Z"
     },
     {
       "name": "data-mining",
