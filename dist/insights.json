@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T09:59:28.044Z",
+  "generatedAt": "2026-07-10T09:54:54.467Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -151,22 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "repo-insight-card",
-      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-07-08T08:46:55Z"
-    },
-    {
       "name": "abod-portfolio",
       "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
       "description": null,
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-07T14:18:28Z"
+      "updatedAt": "2026-07-09T18:33:25Z"
+    },
+    {
+      "name": "repo-insight-card",
+      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-07-09T10:00:03Z"
     },
     {
       "name": "money-tracker",
