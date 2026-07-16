@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-15T08:37:51.442Z",
+  "generatedAt": "2026-07-16T08:36:26.025Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
-    "publicRepos": 26,
+    "publicRepos": 27,
     "followers": 11,
     "following": 18,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
   "totals": {
-    "repositories": 26,
-    "sourceRepositories": 25,
+    "repositories": 27,
+    "sourceRepositories": 26,
     "stars": 3,
     "forks": 1,
     "openIssues": 42
@@ -32,11 +32,11 @@
       "count": 4
     },
     {
-      "name": "C++",
-      "count": 1
+      "name": "HTML",
+      "count": 2
     },
     {
-      "name": "HTML",
+      "name": "C++",
       "count": 1
     }
   ],
@@ -100,7 +100,7 @@
       {
         "key": "2026-07",
         "label": "26/07",
-        "count": 4
+        "count": 5
       }
     ],
     "languagesByRepo": [
@@ -117,11 +117,11 @@
         "count": 4
       },
       {
-        "name": "C++",
-        "count": 1
+        "name": "HTML",
+        "count": 2
       },
       {
-        "name": "HTML",
+        "name": "C++",
         "count": 1
       }
     ],
@@ -139,11 +139,11 @@
         "count": 4
       },
       {
-        "name": "C++",
-        "count": 1
+        "name": "HTML",
+        "count": 2
       },
       {
-        "name": "HTML",
+        "name": "C++",
         "count": 1
       }
     ]
@@ -151,13 +151,13 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "abod-portfolio",
-      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "name": "birthday-cake",
+      "url": "https://github.com/Abdulrezak-halid/birthday-cake",
       "description": null,
-      "language": "TypeScript",
+      "language": "HTML",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-14T14:57:03Z"
+      "updatedAt": "2026-07-16T08:04:31Z"
     },
     {
       "name": "repo-insight-card",
@@ -166,7 +166,16 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-14T08:30:05Z"
+      "updatedAt": "2026-07-15T08:38:31Z"
+    },
+    {
+      "name": "abod-portfolio",
+      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-07-14T14:57:03Z"
     },
     {
       "name": "money-tracker",
@@ -185,15 +194,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-07-02T13:36:21Z"
-    },
-    {
-      "name": "Abdulrezak-halid",
-      "url": "https://github.com/Abdulrezak-halid/Abdulrezak-halid",
-      "description": null,
-      "language": null,
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-06-30T08:38:46Z"
     }
   ]
 }
