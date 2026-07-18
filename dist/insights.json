@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T08:30:10.119Z",
+  "generatedAt": "2026-07-18T08:11:08.811Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -151,13 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "abod-portfolio",
+      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-07-17T14:49:35Z"
+    },
+    {
       "name": "repo-insight-card",
       "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-16T08:36:35Z"
+      "updatedAt": "2026-07-17T08:30:20Z"
     },
     {
       "name": "birthday-cake",
@@ -167,15 +176,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-07-16T08:04:31Z"
-    },
-    {
-      "name": "abod-portfolio",
-      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-07-14T14:57:03Z"
     },
     {
       "name": "money-tracker",
