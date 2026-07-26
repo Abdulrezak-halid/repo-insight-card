@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-25T08:26:06.550Z",
+  "generatedAt": "2026-07-26T08:40:48.771Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 27,
-    "followers": 18,
+    "followers": 21,
     "following": 23,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
@@ -151,6 +151,15 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "repo-insight-card",
+      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-07-25T08:26:30Z"
+    },
+    {
       "name": "birthday-cake",
       "url": "https://github.com/Abdulrezak-halid/birthday-cake",
       "description": null,
@@ -158,15 +167,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-07-24T14:17:52Z"
-    },
-    {
-      "name": "repo-insight-card",
-      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-07-24T08:45:32Z"
     },
     {
       "name": "money-tracker",
