@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-27T10:11:16.176Z",
+  "generatedAt": "2026-07-28T09:08:10.376Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 27,
-    "followers": 22,
-    "following": 25,
+    "followers": 27,
+    "following": 28,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
@@ -95,12 +95,12 @@
       {
         "key": "2026-06",
         "label": "26/06",
-        "count": 7
+        "count": 6
       },
       {
         "key": "2026-07",
         "label": "26/07",
-        "count": 5
+        "count": 6
       }
     ],
     "languagesByRepo": [
@@ -151,13 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "Abdulrezak-halid",
+      "url": "https://github.com/Abdulrezak-halid/Abdulrezak-halid",
+      "description": null,
+      "language": null,
+      "stars": 1,
+      "forks": 0,
+      "updatedAt": "2026-07-27T13:06:26Z"
+    },
+    {
       "name": "repo-insight-card",
       "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-26T08:40:57Z"
+      "updatedAt": "2026-07-27T10:13:18Z"
     },
     {
       "name": "birthday-cake",
@@ -185,15 +194,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-07-20T10:23:00Z"
-    },
-    {
-      "name": "data-mining",
-      "url": "https://github.com/Abdulrezak-halid/data-mining",
-      "description": "Data Mining Project",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-07-02T13:36:21Z"
     }
   ]
 }
