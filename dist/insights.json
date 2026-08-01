@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-31T11:32:44.457Z",
+  "generatedAt": "2026-08-01T08:35:21.337Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 27,
-    "followers": 36,
+    "followers": 38,
     "following": 32,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
@@ -42,11 +42,6 @@
   ],
   "charts": {
     "repositoryActivity": [
-      {
-        "key": "2025-08",
-        "label": "25/08",
-        "count": 0
-      },
       {
         "key": "2025-09",
         "label": "25/09",
@@ -101,6 +96,11 @@
         "key": "2026-07",
         "label": "26/07",
         "count": 6
+      },
+      {
+        "key": "2026-08",
+        "label": "26/08",
+        "count": 0
       }
     ],
     "languagesByRepo": [
@@ -157,7 +157,7 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-07-31T09:20:50Z"
+      "updatedAt": "2026-07-31T11:32:56Z"
     },
     {
       "name": "Abdulrezak-halid",
