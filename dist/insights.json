@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-03T13:19:55.523Z",
+  "generatedAt": "2026-08-04T09:12:41.462Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 27,
-    "followers": 37,
-    "following": 34,
+    "followers": 39,
+    "following": 42,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
@@ -95,12 +95,12 @@
       {
         "key": "2026-07",
         "label": "26/07",
-        "count": 5
+        "count": 4
       },
       {
         "key": "2026-08",
         "label": "26/08",
-        "count": 1
+        "count": 2
       }
     ],
     "languagesByRepo": [
@@ -151,13 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "birthday-cake",
+      "url": "https://github.com/Abdulrezak-halid/birthday-cake",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-08-03T13:24:24Z"
+    },
+    {
       "name": "repo-insight-card",
       "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-08-03T10:08:31Z"
+      "updatedAt": "2026-08-03T13:22:40Z"
     },
     {
       "name": "Abdulrezak-halid",
@@ -167,15 +176,6 @@
       "stars": 1,
       "forks": 0,
       "updatedAt": "2026-07-27T13:06:26Z"
-    },
-    {
-      "name": "birthday-cake",
-      "url": "https://github.com/Abdulrezak-halid/birthday-cake",
-      "description": null,
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-07-24T14:17:52Z"
     },
     {
       "name": "money-tracker",
