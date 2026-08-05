@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-04T09:12:41.462Z",
+  "generatedAt": "2026-08-05T09:09:52.023Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 27,
-    "followers": 39,
+    "followers": 42,
     "following": 42,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
@@ -95,12 +95,12 @@
       {
         "key": "2026-07",
         "label": "26/07",
-        "count": 4
+        "count": 3
       },
       {
         "key": "2026-08",
         "label": "26/08",
-        "count": 2
+        "count": 3
       }
     ],
     "languagesByRepo": [
@@ -151,6 +151,24 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "money-tracker",
+      "url": "https://github.com/Abdulrezak-halid/money-tracker",
+      "description": "ParaTakip is a modern, responsive personal finance application",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-08-04T11:36:30Z"
+    },
+    {
+      "name": "repo-insight-card",
+      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-08-04T09:16:02Z"
+    },
+    {
       "name": "birthday-cake",
       "url": "https://github.com/Abdulrezak-halid/birthday-cake",
       "description": null,
@@ -160,15 +178,6 @@
       "updatedAt": "2026-08-03T13:24:24Z"
     },
     {
-      "name": "repo-insight-card",
-      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-08-03T13:22:40Z"
-    },
-    {
       "name": "Abdulrezak-halid",
       "url": "https://github.com/Abdulrezak-halid/Abdulrezak-halid",
       "description": null,
@@ -176,15 +185,6 @@
       "stars": 1,
       "forks": 0,
       "updatedAt": "2026-07-27T13:06:26Z"
-    },
-    {
-      "name": "money-tracker",
-      "url": "https://github.com/Abdulrezak-halid/money-tracker",
-      "description": "ParaTakip is a modern, responsive personal finance application",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-07-23T14:20:09Z"
     },
     {
       "name": "abod-portfolio",
