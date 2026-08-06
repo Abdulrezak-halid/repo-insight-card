@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-05T09:09:52.023Z",
+  "generatedAt": "2026-08-06T09:09:45.378Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 27,
-    "followers": 42,
+    "followers": 43,
     "following": 42,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
@@ -151,6 +151,15 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "repo-insight-card",
+      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-08-05T09:10:39Z"
+    },
+    {
       "name": "money-tracker",
       "url": "https://github.com/Abdulrezak-halid/money-tracker",
       "description": "ParaTakip is a modern, responsive personal finance application",
@@ -158,15 +167,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-08-04T11:36:30Z"
-    },
-    {
-      "name": "repo-insight-card",
-      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-08-04T09:16:02Z"
     },
     {
       "name": "birthday-cake",
