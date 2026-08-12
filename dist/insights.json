@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-08-11T07:40:28.720Z",
+  "generatedAt": "2026-08-12T07:55:04.647Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
-    "publicRepos": 27,
-    "followers": 46,
+    "publicRepos": 28,
+    "followers": 47,
     "following": 45,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
   "totals": {
-    "repositories": 27,
-    "sourceRepositories": 26,
-    "stars": 3,
+    "repositories": 28,
+    "sourceRepositories": 27,
+    "stars": 4,
     "forks": 1,
     "openIssues": 42
   },
@@ -25,7 +25,7 @@
     },
     {
       "name": "TypeScript",
-      "count": 7
+      "count": 8
     },
     {
       "name": "JavaScript",
@@ -100,7 +100,7 @@
       {
         "key": "2026-08",
         "label": "26/08",
-        "count": 4
+        "count": 5
       }
     ],
     "languagesByRepo": [
@@ -110,7 +110,7 @@
       },
       {
         "name": "TypeScript",
-        "count": 7
+        "count": 8
       },
       {
         "name": "JavaScript",
@@ -132,7 +132,7 @@
       },
       {
         "name": "TypeScript",
-        "count": 7
+        "count": 8
       },
       {
         "name": "JavaScript",
@@ -151,13 +151,13 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "abod-portfolio",
-      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "name": "personal-information-dashboard",
+      "url": "https://github.com/Abdulrezak-halid/personal-information-dashboard",
       "description": null,
       "language": "TypeScript",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
-      "updatedAt": "2026-08-10T10:40:17Z"
+      "updatedAt": "2026-08-12T06:34:32Z"
     },
     {
       "name": "repo-insight-card",
@@ -166,7 +166,16 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-08-10T08:09:09Z"
+      "updatedAt": "2026-08-11T07:40:38Z"
+    },
+    {
+      "name": "abod-portfolio",
+      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-08-10T10:40:17Z"
     },
     {
       "name": "money-tracker",
@@ -185,15 +194,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-08-03T13:24:24Z"
-    },
-    {
-      "name": "Abdulrezak-halid",
-      "url": "https://github.com/Abdulrezak-halid/Abdulrezak-halid",
-      "description": null,
-      "language": null,
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-07-27T13:06:26Z"
     }
   ]
 }
