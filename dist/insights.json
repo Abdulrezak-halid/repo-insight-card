@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-13T07:56:24.377Z",
+  "generatedAt": "2026-08-14T07:53:19.786Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 28,
-    "followers": 48,
+    "followers": 47,
     "following": 45,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
@@ -151,13 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "abod-portfolio",
+      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-08-13T12:06:40Z"
+    },
+    {
       "name": "repo-insight-card",
       "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-08-12T07:56:39Z"
+      "updatedAt": "2026-08-13T07:56:54Z"
     },
     {
       "name": "personal-information-dashboard",
@@ -167,15 +176,6 @@
       "stars": 1,
       "forks": 0,
       "updatedAt": "2026-08-12T06:34:32Z"
-    },
-    {
-      "name": "abod-portfolio",
-      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-08-10T10:40:17Z"
     },
     {
       "name": "money-tracker",
