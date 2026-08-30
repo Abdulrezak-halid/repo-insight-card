@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T12:43:45.599Z",
+  "generatedAt": "2026-08-30T11:59:19.348Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -151,22 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "repo-insight-card",
-      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-08-28T18:47:59Z"
-    },
-    {
       "name": "personal-information-dashboard",
       "url": "https://github.com/Abdulrezak-halid/personal-information-dashboard",
       "description": null,
       "language": "TypeScript",
       "stars": 1,
       "forks": 0,
-      "updatedAt": "2026-08-25T14:15:00Z"
+      "updatedAt": "2026-08-29T17:51:55Z"
+    },
+    {
+      "name": "repo-insight-card",
+      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-08-29T12:43:57Z"
     },
     {
       "name": "abod-portfolio",
