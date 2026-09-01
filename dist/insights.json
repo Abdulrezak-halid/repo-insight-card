@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T14:00:55.164Z",
+  "generatedAt": "2026-09-01T11:44:39.497Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -42,11 +42,6 @@
   ],
   "charts": {
     "repositoryActivity": [
-      {
-        "key": "2025-09",
-        "label": "25/09",
-        "count": 0
-      },
       {
         "key": "2025-10",
         "label": "25/10",
@@ -101,6 +96,11 @@
         "key": "2026-08",
         "label": "26/08",
         "count": 5
+      },
+      {
+        "key": "2026-09",
+        "label": "26/09",
+        "count": 0
       }
     ],
     "languagesByRepo": [
@@ -151,22 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "repo-insight-card",
-      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-08-30T11:59:51Z"
-    },
-    {
       "name": "personal-information-dashboard",
       "url": "https://github.com/Abdulrezak-halid/personal-information-dashboard",
       "description": null,
       "language": "TypeScript",
       "stars": 1,
       "forks": 0,
-      "updatedAt": "2026-08-29T17:51:55Z"
+      "updatedAt": "2026-08-31T15:40:26Z"
+    },
+    {
+      "name": "repo-insight-card",
+      "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-08-31T14:26:59Z"
     },
     {
       "name": "abod-portfolio",
