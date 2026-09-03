@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-02T11:25:51.426Z",
+  "generatedAt": "2026-09-03T11:22:17.353Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 28,
-    "followers": 50,
-    "following": 48,
+    "followers": 51,
+    "following": 50,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
@@ -65,7 +65,7 @@
       {
         "key": "2026-02",
         "label": "26/02",
-        "count": 2
+        "count": 1
       },
       {
         "key": "2026-03",
@@ -100,7 +100,7 @@
       {
         "key": "2026-09",
         "label": "26/09",
-        "count": 2
+        "count": 3
       }
     ],
     "languagesByRepo": [
@@ -151,13 +151,13 @@
   "topTopics": [],
   "recentRepos": [
     {
-      "name": "data-mining",
-      "url": "https://github.com/Abdulrezak-halid/data-mining",
-      "description": "Data Mining Project",
+      "name": "ai-snake-game",
+      "url": "https://github.com/Abdulrezak-halid/ai-snake-game",
+      "description": "A collection of two snake games built with Python - featuring both a hand-tracking AI version using computer vision and a classic keyboard-controlled version.",
       "language": "Python",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-09-01T15:39:39Z"
+      "updatedAt": "2026-09-02T14:46:37Z"
     },
     {
       "name": "repo-insight-card",
@@ -166,7 +166,16 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-09-01T11:45:53Z"
+      "updatedAt": "2026-09-02T11:26:37Z"
+    },
+    {
+      "name": "data-mining",
+      "url": "https://github.com/Abdulrezak-halid/data-mining",
+      "description": "Data Mining Project",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-01T15:39:39Z"
     },
     {
       "name": "personal-information-dashboard",
@@ -185,15 +194,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-08-14T10:42:53Z"
-    },
-    {
-      "name": "money-tracker",
-      "url": "https://github.com/Abdulrezak-halid/money-tracker",
-      "description": "ParaTakip is a modern, responsive personal finance application",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-08-04T11:36:30Z"
     }
   ]
 }
