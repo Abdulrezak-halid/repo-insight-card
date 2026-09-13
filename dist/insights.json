@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-12T10:53:56.894Z",
+  "generatedAt": "2026-09-13T11:59:00.170Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
-    "publicRepos": 28,
-    "followers": 53,
+    "publicRepos": 29,
+    "followers": 55,
     "following": 57,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
   "totals": {
-    "repositories": 28,
-    "sourceRepositories": 27,
+    "repositories": 29,
+    "sourceRepositories": 28,
     "stars": 4,
     "forks": 1,
     "openIssues": 42
@@ -100,7 +100,7 @@
       {
         "key": "2026-09",
         "label": "26/09",
-        "count": 5
+        "count": 6
       }
     ],
     "languagesByRepo": [
@@ -151,13 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "monyTracker-mobile",
+      "url": "https://github.com/Abdulrezak-halid/monyTracker-mobile",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-12T11:23:34Z"
+    },
+    {
       "name": "repo-insight-card",
       "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-09-11T11:29:34Z"
+      "updatedAt": "2026-09-12T10:54:01Z"
     },
     {
       "name": "personal-information-dashboard",
@@ -185,15 +194,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-09-02T14:46:37Z"
-    },
-    {
-      "name": "data-mining",
-      "url": "https://github.com/Abdulrezak-halid/data-mining",
-      "description": "Data Mining Project",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-01T15:39:39Z"
     }
   ]
 }
