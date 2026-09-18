@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T11:49:01.407Z",
+  "generatedAt": "2026-09-18T11:24:05.343Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -151,13 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "personal-information-dashboard",
+      "url": "https://github.com/Abdulrezak-halid/personal-information-dashboard",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "updatedAt": "2026-09-17T20:54:22Z"
+    },
+    {
       "name": "repo-insight-card",
       "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-09-16T11:44:49Z"
+      "updatedAt": "2026-09-17T11:49:06Z"
     },
     {
       "name": "moneyTracker-mobile",
@@ -167,15 +176,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-09-15T14:15:20Z"
-    },
-    {
-      "name": "personal-information-dashboard",
-      "url": "https://github.com/Abdulrezak-halid/personal-information-dashboard",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-10T11:43:06Z"
     },
     {
       "name": "abod-portfolio",
