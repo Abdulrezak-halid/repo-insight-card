@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T14:19:55.762Z",
+  "generatedAt": "2026-10-14T12:02:02.924Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -95,12 +95,12 @@
       {
         "key": "2026-09",
         "label": "26/09",
-        "count": 5
+        "count": 4
       },
       {
         "key": "2026-10",
         "label": "26/10",
-        "count": 2
+        "count": 3
       }
     ],
     "languagesByRepo": [
@@ -151,13 +151,22 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "personal-information-dashboard",
+      "url": "https://github.com/Abdulrezak-halid/personal-information-dashboard",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "updatedAt": "2026-10-13T14:34:46Z"
+    },
+    {
       "name": "repo-insight-card",
       "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-10-12T15:38:52Z"
+      "updatedAt": "2026-10-13T14:20:01Z"
     },
     {
       "name": "life-management-system",
@@ -167,15 +176,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-10-01T14:21:10Z"
-    },
-    {
-      "name": "personal-information-dashboard",
-      "url": "https://github.com/Abdulrezak-halid/personal-information-dashboard",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-25T20:59:18Z"
     },
     {
       "name": "moneyTracker-mobile",
