@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-14T13:38:12.819Z",
+  "generatedAt": "2026-11-15T14:02:32.737Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
-    "publicRepos": 29,
-    "followers": 61,
+    "publicRepos": 30,
+    "followers": 60,
     "following": 68,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
   "totals": {
-    "repositories": 29,
-    "sourceRepositories": 28,
+    "repositories": 30,
+    "sourceRepositories": 29,
     "stars": 4,
     "forks": 1,
     "openIssues": 42
@@ -100,7 +100,7 @@
       {
         "key": "2026-11",
         "label": "26/11",
-        "count": 1
+        "count": 2
       }
     ],
     "languagesByRepo": [
@@ -151,6 +151,15 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "clinic-digital-transformation",
+      "url": "https://github.com/Abdulrezak-halid/clinic-digital-transformation",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-11-15T13:46:02Z"
+    },
+    {
       "name": "repo-insight-card",
       "url": "https://github.com/Abdulrezak-halid/repo-insight-card",
       "description": null,
@@ -185,15 +194,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-09-15T14:15:20Z"
-    },
-    {
-      "name": "abod-portfolio",
-      "url": "https://github.com/Abdulrezak-halid/abod-portfolio",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-06T13:05:40Z"
     }
   ]
 }
