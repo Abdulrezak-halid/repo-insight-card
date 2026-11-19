@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-18T15:46:26.274Z",
+  "generatedAt": "2026-11-19T15:51:40.746Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
     "url": "https://github.com/Abdulrezak-halid",
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 30,
-    "followers": 59,
-    "following": 67,
+    "followers": 57,
+    "following": 68,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
@@ -153,11 +153,11 @@
     {
       "name": "clinic-digital-transformation",
       "url": "https://github.com/Abdulrezak-halid/clinic-digital-transformation",
-      "description": null,
+      "description": "Physiotherapist – Clinic Management",
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-11-18T07:33:35Z"
+      "updatedAt": "2026-11-18T17:21:18Z"
     },
     {
       "name": "repo-insight-card",
