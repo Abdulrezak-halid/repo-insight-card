@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T18:23:07.872Z",
+  "generatedAt": "2026-11-24T17:53:50.334Z",
   "profile": {
     "login": "Abdulrezak-halid",
     "name": "Abdulrezak Halit",
@@ -7,7 +7,7 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/133590051?v=4",
     "publicRepos": 30,
     "followers": 56,
-    "following": 68,
+    "following": 67,
     "email": "abdulrezak.khaled@gmail.com",
     "joinedAt": "2023-05-14T15:43:43Z"
   },
@@ -75,7 +75,7 @@
       {
         "key": "2026-06",
         "label": "26/06",
-        "count": 6
+        "count": 5
       },
       {
         "key": "2026-07",
@@ -100,7 +100,7 @@
       {
         "key": "2026-11",
         "label": "26/11",
-        "count": 2
+        "count": 3
       }
     ],
     "languagesByRepo": [
@@ -151,6 +151,15 @@
   "topTopics": [],
   "recentRepos": [
     {
+      "name": "EduPath-AI",
+      "url": "https://github.com/Abdulrezak-halid/EduPath-AI",
+      "description": "EduPath is a comprehensive educational platform designed to guide students through their academic journey, providing valuable resources, tools, and support for university success.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-11-23T19:06:52Z"
+    },
+    {
       "name": "clinic-digital-transformation",
       "url": "https://github.com/Abdulrezak-halid/clinic-digital-transformation",
       "description": "Physiotherapist – Clinic Management",
@@ -185,15 +194,6 @@
       "stars": 0,
       "forks": 0,
       "updatedAt": "2026-10-01T14:21:10Z"
-    },
-    {
-      "name": "moneyTracker-mobile",
-      "url": "https://github.com/Abdulrezak-halid/moneyTracker-mobile",
-      "description": null,
-      "language": "Swift",
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-15T14:15:20Z"
     }
   ]
 }
